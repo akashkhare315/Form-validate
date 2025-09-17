@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Form.css";
 
-function Form() {
+function Form(props) {
+  console.log(props);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
