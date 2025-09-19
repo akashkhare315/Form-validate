@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Form from "./component/form";
 import UserData from "./component/UserData";
+import ProfileForm from "./component/ProfileForm";
 
 function App() {
   const [user, setUser] = useState([
@@ -18,6 +19,8 @@ function App() {
     <div>
       <Form />
       <UserData user={user} setUser={setUser} />
+
+      <ProfileForm />
     </div>
   );
 }
